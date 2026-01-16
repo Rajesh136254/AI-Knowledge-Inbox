@@ -1,4 +1,4 @@
-# 🧠 AI Knowledge Inbox
+# AI Knowledge Inbox
 
 <div align="center">
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 📋 Overview
+##  Overview
 
 AI Knowledge Inbox is a full-stack web application that demonstrates production-ready RAG implementation. It allows users to save notes and URLs, then ask natural language questions to retrieve contextually relevant answers powered by semantic search and Google's Gemini AI.
 
@@ -22,7 +22,7 @@ AI Knowledge Inbox is a full-stack web application that demonstrates production-
 
 ---
 
-## ✨ Features
+##  Features
 
 ### Core Capabilities
 - 📝 **Text Notes**: Add and manage plain text knowledge entries
@@ -354,15 +354,14 @@ ai-knowledge-inbox/
 │   │   └── scraperService.js # URL content extraction
 │   ├── db.js                 # Database initialization
 │   ├── index.js              # Server entry point
-│   ├── .env.example          # Environment template
+│   ├── .env                  # Environment 
 │   ├── debug_db.js           # Dev tool: inspect database
 │   ├── test_gemini.js        # Dev tool: test API connection
 │   └── rebuild_chunks.js     # Dev tool: regenerate embeddings
 │
 ├── .gitignore
-├── LICENSE
+├─  Setup_Guide
 ├── README.md
-├── INTERVIEW_ASSESSMENT.md   # Detailed analysis for interviews
 └── setup.bat                 # Quick start script (Windows)
 ```
 
@@ -450,11 +449,6 @@ Re-generates embeddings for all existing items (useful after model changes).
 - **Workaround**: Use smaller notes, or upgrade to paid tier
 - **Future**: Add exponential backoff + retry logic
 
-### Delete Button Confusion
-- **Issue**: Delete appears broken when items fail to save due to quota
-- **Root Cause**: Items stuck in "Saving..." state never get an ID
-- **Solution**: Better error messaging (not implemented to preserve original code)
-
 ### URL Scraping Limitations
 - Some sites block automated scraping (403/401 errors)
 - JavaScript-heavy SPAs may not render content
@@ -480,61 +474,3 @@ Re-generates embeddings for all existing items (useful after model changes).
 - ✅ Structured logging
 
 ---
-
-## 📚 Learning Resources
-
-### RAG Concepts
-- [LangChain RAG Guide](https://python.langchain.com/docs/use_cases/question_answering/)
-- [Pinecone RAG Tutorial](https://www.pinecone.io/learn/retrieval-augmented-generation/)
-- [OpenAI Embeddings Guide](https://platform.openai.com/docs/guides/embeddings)
-
-### Gemini API
-- [Gemini Documentation](https://ai.google.dev/docs)
-- [Text Embeddings Guide](https://ai.google.dev/docs/embeddings_guide)
-- [Best Practices](https://ai.google.dev/docs/best_practices)
-
----
-
-## 🤝 Contributing
-
-This is a portfolio/interview project, but feedback is welcome!
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👤 Author
-
-**Your Name**
-- Portfolio: [yourportfolio.com](https://yourportfolio.com)
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- GitHub: [@yourusername](https://github.com/yourusername)
-
----
-
-## 🙏 Acknowledgments
-
-- **Google AI** for the Gemini API and generous free tier
-- **Vercel** for React + Vite ecosystem
-- **Better-sqlite3** team for the excellent SQLite library
-- Interview prep resources that inspired this architecture
-
----
-
-<div align="center">
-
-**⭐ If this project helped you in your interview prep, consider giving it a star!**
-
-Made with ❤️ for developers learning RAG and full-stack AI
-
-</div>
