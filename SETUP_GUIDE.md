@@ -33,10 +33,6 @@ cd AI Knowledge Inbox
 
 ## Step 3: Configure Environment
 
-```bash
-cd server
-cp .env.example .env
-```
 
 Edit `server/.env` and add your API key:
 ```env
